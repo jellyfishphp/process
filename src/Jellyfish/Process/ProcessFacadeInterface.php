@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Jellyfish\Process;
 
-interface ProcessFactoryInterface
+interface ProcessFacadeInterface
 {
     /**
-     * @param array $command
+     * @param string[] $command
      *
      * @return \Jellyfish\Process\ProcessInterface
      */
-    public function create(array $command): ProcessInterface;
+    public function createProcess(array $command): ProcessInterface;
 }
